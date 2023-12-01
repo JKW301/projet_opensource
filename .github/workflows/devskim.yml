@@ -15,10 +15,6 @@ on:
     - main
   schedule:
     - cron: "0 2 * * 1-5"
-  pull_request_review:
-    types: [edited, dismissed]
-  pull_request:
-    types: [opened, reopened]
 
 jobs:
   lint:
