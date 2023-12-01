@@ -2,22 +2,30 @@ name: C/C++ CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+      - release/*
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - name: configure
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+    - name: List contents of src/
+      run: ls -R src/
+    - name: Change to src/ directory
+      run: cd src/
+    - name: Make configure executable
+      run: chmod +x configure
+    - name: Run Configure
       run: ./configure
-    - name: make
+    - name: Run Make
       run: make
-    - name: make check
+    - name: Run Make Check
       run: make check
-    - name: make distcheck
+    - name: Run Make Distcheck
       run: make distcheck
