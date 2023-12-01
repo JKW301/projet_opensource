@@ -1,3 +1,4 @@
 **/*.out
-./build/debug/*
+/build/debug/*
 node_modules
+.github
