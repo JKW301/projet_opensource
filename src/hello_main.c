@@ -4,8 +4,9 @@
 
 int main () {
 	char * nom[60];
-	printf("Entrez votre nom : \n");
-	scanf("%s", nom);
-	printf("Bonjour %s.\n", nom);
+	char * prenom[40];
+	printf("Entrez votre nom puis votre prénom : \n");
+	scanf("%s %s", &nom, &prenom);
+	printf("Bonjour %s %s.\n", prenom, nom);
 exit(EXIT_SUCCESS);
 }
