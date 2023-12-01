@@ -2,38 +2,22 @@ name: C/C++ CI
 
 on:
   push:
-    branches:
-    - main
-    - release/*
+    branches: [ "main" ]
   pull_request:
-    branches:
-    - main
+    branches: [ "main" ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
-
-    - name: Install Build Dependencies
-      run: |
-        sudo apt-get update -qq
-        sudo apt-get install -y build-essential
-
-    - name: Run Configure
-      run: |
-        ./configure
-
-    - name: Run Make
-      run: |
-        make
-
-    - name: Run Make Check
-      run: |
-        make check
-
-    - name: Run Make Distcheck
-      run: |
-        make distcheck
+    - uses: actions/checkout@v3
+    - name: configure
+      run: ./configure
+    - name: make
+      run: make
+    - name: make check
+      run: make check
+    - name: make distcheck
+      run: make distcheck
