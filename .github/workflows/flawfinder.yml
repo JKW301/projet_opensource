@@ -19,9 +19,7 @@ on:
   issue_comment:
     types: [created, deleted]
   merge_group:
-    types: [checks_requested]
-  pull_request:
-    types: [opened, reopened]
+    branches: [checks_requested]
   pull_request_review:
     types: [edited, dismissed]
     
