@@ -1,4 +1,5 @@
 ~# HEADER
+![Stars](https://img.shields.io/github/stars/VotreNomDeCompte/VotreProjet?style=social)
 
 ~# Installation
 The programme is only avaible on Debian basedd systems
