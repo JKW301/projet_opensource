@@ -3,6 +3,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![GitHub forks](https://img.shields.io/github/forks/JKW301/projet_opensource)
 
+Please, have a look at our website : https://jkw301.github.io/projet_opensource/ 
+
 # Installation
 Simply download nameCatcher.exe and run it on your machine. 
 
