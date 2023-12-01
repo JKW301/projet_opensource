@@ -5,6 +5,7 @@
 int main () {
 	char * prenom[60];
 	char * nom[60];
+
 	printf("Entrez votre prenom : \n");
 	scanf("%s", prenom);
 	printf("Entrez votre nom : \n");
