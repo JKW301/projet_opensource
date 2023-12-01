@@ -4,7 +4,22 @@
 ![GitHub forks](https://img.shields.io/github/forks/JKW301/projet_opensource)
 
 # Installation
-The programme is only avaible on Debian based systems
+Simply download nameCatcher.exe and run it on your machine. 
+
+# Compile with gcc
+
+if you want to compile yourself, first install GCC :
+
+```bash
+sudo apt install gcc -y
+```
+
+your can tinker with the source code and generate an executable with the following command line : 
+
+```bash
+gcc -o compiled_filename source_code.c
+```
+
 
 # Contribution methods
 
